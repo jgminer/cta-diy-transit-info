@@ -1,3 +1,5 @@
 
 # 21.5 hours after 11 am (7:30 am), turn back on
 0 11 * * * root /usr/sbin/rtcwake -m off -s 73800 
+# Start the page 10 minutes after attempted startup
+40 7 * * * root google-chrome --app=file:///home/emily/repos/cta-diy-transit-info/index.html
