@@ -1,0 +1,206 @@
+﻿/* --- overarching styles --- */
+html {
+	background-color: #1e1e1e;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-size: .9em;
+	border: 0;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #1e1e1e;
+	color: #FFF;
+	margin: 0;
+	overflow: hidden;
+}
+body.arrivalscreen {
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #1e1e1e;
+	color: #FFF;
+	margin: 1.3em;
+	overflow: hidden;
+}
+body.statuspage {
+	margin: 0;
+	padding: 0;
+	background-color: #060607;
+	height: 5.5em;
+}
+h1 {
+	font-size: 3.15em;
+	margin: 0;
+	font-weight: normal;
+}
+h1.statuspage {
+	color: #f3d300;
+}
+h2 {
+	font-size: 1.8em;
+	font-weight: normal;
+	color: #99a;
+	margin: 0 0 1.5em 0;
+}
+h5 {
+	font-size: 2.4em;
+	font-weight: normal;
+	color: #99a;
+	margin: 0 0 1.5em 0;
+}
+h6 {
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #99a;
+	margin: 0 0 1.5em 0;
+}
+a, a:link, a:visited {
+	color: #059;
+	text-decoration: underline;
+}
+
+iframe {
+	margin: 0;
+	border: 0;
+}
+iframe.masterframe {
+	margin: 0;
+	width: 100%;
+	height: 55em;
+	border: 0;
+	text-align: center;
+}
+.genericsource
+{
+    color: #999;
+}
+
+/* --- arrivals display --- */
+.routedescription {
+	font-size: 1em;
+	float: left;
+	vertical-align: top;
+	padding: 0;
+	margin: 0;
+}
+.routenumber {
+	font-size: 1.9em;
+	margin: 0 5 0 5;
+	font-weight: bold;
+}
+.routedest, .routedir {
+	font-size: 1.15em;
+}
+.routedir {
+	font-weight: bold;
+}
+.esttime {
+	font-size: 2.8em;
+	text-align: right;
+	float: right;
+	vertical-align: top;
+	font-weight: bold;
+}
+.errorreturn {
+	padding: 2.2em 0;
+	font-size: 1.8em;
+	color: #ccf;
+}
+
+.trackeroutputbox * {
+	display: block;
+	height: 1px;
+	overflow: hidden;
+	font-size: .01em;
+	background: #113388;
+
+}
+.trackeroutputboxfg {
+	background: #113388;
+	border-radius: 3px;
+}
+.trackeroutput {
+	color: #FFF;
+	padding: .5em 1em;
+	text-align: left;
+	height: 3.8em;
+}
+
+/* --- stuff for status bar --- */
+.logoicon {
+	float: left;
+	margin: 1.1em 0 1.1em 1.1em;
+}
+.logoiconwithcta {
+	float: left;
+	margin: 1.1em  0 1.1em 0;
+}
+#currenttime, #currenttemp, #currentdate, #identbar {
+	font-size: 1.3em;
+	float: left;
+	margin: 1em;
+	vertical-align: middle;
+	bottom: -8px;
+	position: relative;
+}
+#pluscta {
+	font-size: 1.7em;
+	float: left;
+	margin: 1em .3em 1em .3em;
+	vertical-align: middle;
+	bottom: 2px;
+	position: relative;
+}
+#plusctabig {
+	font-size: 1.7em;
+	float: left;
+	margin: 1em .3em 1em .3em;
+	vertical-align: middle;
+	bottom: 6px;
+	position: relative;
+}
+#plusctasmall {
+	font-size: 1.7em;
+	float: left;
+	margin: 1.2em .3em 1.2em .3em;
+	vertical-align: middle;
+	position: relative;
+}
+#currentinfo {
+	float: right;
+}
+#currentdate, #currenttemp {
+	padding-right: 1.8em;
+}
+#currenttemp {
+	color: #BDD73C;
+}
+#currentdate {
+	color: #00B2D9;
+}
+.tempc {
+	color: #A7BE61;
+	padding-left: .5em;
+}
+#currenttime {
+	color: #E67E8A;
+}
+#statusbar {
+	border-width: 1px;
+	border-color: #0079C2;
+	position: absolute;
+	bottom: 0px;
+	height: 5.5em;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-top-style: solid;
+}
+BR#brAll
+{
+	 clear: both
+}
+div.normal{background-image:url(/images/global/icon-normal-dark.png);background-repeat: no-repeat;background-position: center left;padding-left:15px;text-decoration:none; }
+div.minor{background-image:url(/images/global/icon-minor-dark.png);background-repeat: no-repeat;background-position: center left;padding-left:15px;font-weight:bold; text-decoration:none; }
+div.major{background-image:url(/images/global/icon-major-dark.png);background-repeat: no-repeat;background-position: center left;padding-left:15px;font-weight:bold; text-decoration:none; }
+div.planned{background-image:url(/images/global/icon-planned-dark.png);background-repeat: no-repeat;background-position: center left;padding-left:15px;font-weight:bold; text-decoration:none; }
+

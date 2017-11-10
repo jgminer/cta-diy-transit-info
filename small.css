@@ -1,0 +1,11 @@
+﻿@import url('style.css');
+html {
+    font-size: .74em;
+}
+iframe.masterframe {
+	height: 70em;
+}
+#identbar, #currenttemp, #currentdate, #currenttime
+{
+    margin: 1.3em;
+}

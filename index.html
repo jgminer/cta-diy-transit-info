@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="en-us" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>CTA Bus Tracker</title>
+    <style type="text/css">
+@import url('style.css');
+</style>
+
+    <script type="text/javascript">
+function reloadStatusBar() {
+    frm = document.getElementsByName("statusbar");
+    frm.src = frm.src;
+    setTimeout("reloadStatusBar()", 3600000);
+    var statusbarpage = new String("statusbar.aspx");
+    document.getElementById("statusbar").src = statusbarpage;
+}
+
+var timer;
+var count = 0;
+
+function updateFrame() {
+    totalnumberofslides = 2;
+    if (count >= totalnumberofslides) {
+        count = 0;
+    }
+    try {
+        var pagetoload = new Array("http://www.transitchicago.com/diydisplay/showarrivals.aspx?stopid=1150&bgcolor=4E2A84&slidename=Westbound+Sheridan+%26+Oakdale&size=small","http://www.transitchicago.com/diydisplay/showarrivals.aspx?stopid=1075&bgcolor=00274c&slidename=Southbound+Sheridan+%26+Oakdale&size=small");
+        var interval = new Array(8000,8000);
+        document.getElementById("arrivalframe").src = pagetoload[count];
+        clearTimeout(timer);
+        timer = setTimeout("updateFrame()", interval[count]);
+        count = count + 1;
+    } catch(e) {}
+}
+    </script>
+
+</head>
+<body onload="updateFrame();reloadStatusBar()">
+    <iframe id="arrivalframe" src="" width="100%" frameborder="0" class="masterframe"
+        scrolling="auto"></iframe>
+    <br id="brAll" />
+    <iframe id="statusbar" width="100%" frameborder="0" src="" scrolling="no"></iframe>
+</body>
+</html>
